@@ -1,0 +1,19 @@
+[package]
+name = "http-post-capture"
+description = "A simple CLI program that listens on a specified address for HTTP post uploads and saves them in files"
+readme = "README.md"
+authors = [ "Douile <25043847+Douile@users.noreply.github.com>" ]
+homepage = "https://github.com/Douile/http-post-capture"
+repository = "https://github.com/Douile/http-post-capture"
+categories = [ "command-line-utilities" ]
+license = "MIT"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+routerify = "2"
+hyper = "0.14"
+tokio = { version = "1", features = ["full"] }
+clap = "2.34"
